@@ -13,6 +13,7 @@ function App() {
         <body className="body">
             <h1>Photo Viewer</h1>
             <PhotoViewer src={selectedURL}/>
+            <h2>Thumbnails</h2>
             <PhotoCollection selectedURL={selectedURL} setSelectedURL={setSelectedURL}/>
         </body>
 
