@@ -1,0 +1,10 @@
+﻿.thumbnail{
+    height: 100px;
+    width: 100px;
+    padding: 2px;
+}
+
+.photoContainer{
+    display: flex;
+    flex-wrap: wrap;
+}

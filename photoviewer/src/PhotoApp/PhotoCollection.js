@@ -1,15 +1,14 @@
 ﻿import React from "react";  // import React (to provide access to JSX)
+import {ImageUrls} from "./ImageData";
+import './PhotoCollection.css';
 
 function PhotoCollection() {  
     
-    var imageList = [];
-    
-    
-    
+    const imageList = ImageUrls.map(url => <img className="thumbnail" src={url} alt="an image"/>);
     
     return (
-        <div>
-            {}
+        <div className="photoContainer">
+            {imageList}
         </div>
     );
 }
