@@ -8,7 +8,7 @@ function App() {
 
         <body className="body">
             <h1>Photo Viewer</h1>
-            <PhotoViewer/>
+            <PhotoViewer src="https://i.picsum.photos/id/466/200/200.jpg"/>
         </body>
 
     );

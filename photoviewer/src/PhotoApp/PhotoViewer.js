@@ -1,10 +1,11 @@
 ﻿import React from "react";  // import React (to provide access to JSX)
+import './PhotoViewer.css';
 
-function PhotoViewer() {    // declare a new function called 'PhotoViewer'
+function PhotoViewer(props) {    // declare a new function called 'PhotoViewer'
     return (
         <div>               
             <h2>Selected Photo</h2>
-            <img src="https://i.picsum.photos/id/466/200/200.jpg"/>
+            <img className="largePhoto" src={props.src}/>
         </div>
     );
 }
