@@ -1,10 +1,10 @@
-﻿import React from "react";  // import React (to provide access to JSX)
+﻿import React, {useState} from "react";  // import React (to provide access to JSX)
 import {ImageUrls} from "./ImageData";
 import './PhotoCollection.css';
 
-function PhotoCollection() {  
+function PhotoCollection(props) {  
     
-    const imageList = ImageUrls.map(url => <img className="thumbnail" src={url} alt="an image"/>);
+    const imageList = ImageUrls.map(url => <img className="thumbnail" src={url} alt="an image" onClick={() => props.setSelectedURL(url)}/>);
     
     return (
         <div className="photoContainer">

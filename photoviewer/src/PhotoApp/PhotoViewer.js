@@ -1,4 +1,4 @@
-﻿import React from "react";  // import React (to provide access to JSX)
+﻿import React, {useState} from "react";  // import React (to provide access to JSX)
 import './PhotoViewer.css';
 
 function PhotoViewer(props) {    // declare a new function called 'PhotoViewer'
