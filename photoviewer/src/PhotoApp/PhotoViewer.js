@@ -5,7 +5,7 @@ function PhotoViewer(props) {    // declare a new function called 'PhotoViewer'
     return (
         <div>               
             <h2>Selected Photo</h2>
-            <img className="largePhoto" src={props.src}/>
+            <img data-testid="largePhoto" className="largePhoto" src={props.src}/>
         </div>
     );
 }

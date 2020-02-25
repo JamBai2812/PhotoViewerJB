@@ -58,6 +58,7 @@
       <e p="photoviewer\node_modules\upath" t="IncludeRecursive" />
       <e p="photoviewer\node_modules\worker-farm" t="IncludeRecursive" />
     </e>
+    <e p="C:\Users\JamBai\.Rider2019.3\config\javascript\extLibs\global-types\node_modules\@types\jest" t="IncludeRecursive" />
     <e p="C:\Users\JamBai\.Rider2019.3\system\extResources" t="IncludeRecursive" />
     <e p="C:\Users\JamBai\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_.19.00" t="ExcludeRecursive" />
   </component>

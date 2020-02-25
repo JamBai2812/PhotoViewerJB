@@ -4,7 +4,7 @@ import {PhotoCollection} from "./PhotoCollection";
 
 function Thumbnail(props) {  
     
-    return <img className={"thumbnail" + (props.isSelected ? " selected" : "")} src={props.src} alt="an image"/>;
+    return <img data-testid="thumbnailListItem" className={"thumbnail" + (props.isSelected ? " selected" : "")} src={props.src} alt="an image"/>;
     
 }
 

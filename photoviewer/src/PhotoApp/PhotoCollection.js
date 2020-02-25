@@ -25,8 +25,8 @@ function PhotoCollection(props) {
     
     
     const imageList = ImageUrls
-        .map(url => 
-            <li className="thumbnailListItem" onClick={() => props.setSelectedURL(url)}>
+        .map((url, index)=> 
+            <li className="thumbnailListItem" onClick={() => props.setSelectedURL(url)} key={index}>
                 <Thumbnail src={url} isSelected={url===props.selectedURL} />
             </li>
             );
