@@ -1,6 +1,7 @@
 ﻿import React, {useState} from "react";  // import React (to provide access to JSX)
 import {ImageUrls} from "./ImageData";
 import './PhotoCollection.css';
+import {Thumbnail} from "./Thumbnail";
 
 function PhotoCollection(props) {  
     
@@ -21,22 +22,20 @@ function PhotoCollection(props) {
     // }
     
     
-    const imageList = ImageUrls.map(url => <img className="thumbnail" src={url} alt="an image" onClick={() => props.setSelectedURL(url)}/>);
     
     
-    
-    imageList.forEach(img => {
-            if (img.src === props.selectedURL) {
-                img.className += " selected";
-            }
-        }
-    );
+    const imageList = ImageUrls
+        .map(url => 
+            <li className="thumbnailListItem" onClick={() => props.setSelectedURL(url)}>
+                <Thumbnail src={url} isSelected={url===props.selectedURL} />
+            </li>
+            );
     
     
     return (
-        <div className="photoContainer">
+        <ul className="photoContainer">
             {imageList}
-        </div>
+        </ul>
     );
 }
 

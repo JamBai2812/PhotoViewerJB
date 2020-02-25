@@ -4,11 +4,23 @@
     padding: 2px;
 }
 
+.thumbnailListItem{
+    list-style-type: none;
+}
+
 .photoContainer{
     display: flex;
     flex-wrap: wrap;
+    list-style-type: none;
+    margin-block-start: unset;
+    margin-block-end: unset;
+    padding-inline-start: unset;
+    justify-content: center;
 }
 
-.selected{
+.thumbnail.selected{
     border-style: solid;
+    border-width: 3px;
+    height: 94px;
+    width: 94px;
 }
