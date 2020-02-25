@@ -1,7 +1,7 @@
 ﻿.thumbnail{
     height: 100px;
     width: 100px;
-    padding: 2px;
+    padding: 1px;
 }
 
 .thumbnailListItem{
@@ -21,6 +21,7 @@
 .thumbnail.selected{
     border-style: solid;
     border-width: 3px;
+    /*outline: 2px solid green;*/
     height: 94px;
     width: 94px;
 }
